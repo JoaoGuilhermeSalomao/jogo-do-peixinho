@@ -40,5 +40,5 @@ function create(){
 
 function update(){ // repete a cada fps
 peixinho.x = this.input.x; // posição x do mouse - this.input.x
-peixinho.y = this.input.y; // posição y do mouse - this.input.y //d
+peixinho.y = this.input.y; // posição y do mouse - this.input.y
 } 
