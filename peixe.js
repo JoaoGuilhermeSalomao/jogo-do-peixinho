@@ -22,19 +22,21 @@ function preload(){
     this.load.image("turquesa", "assets/peixes/peixe_turquesa.png");
     this.load.image("tubarao", "assets/peixes/tubarao.png");
     this.load.image("areia", "areia.png");
+    this.load.image("ariel", "ariel.png");
     this.load.image("logo", "assets/logo-inteli_azul.png");
     
 }
 // adicionar imagem ao jogo
 function create(){
     this.add.image(400, 300, "mar");
-    this.add.image(500, 350, "baiacu");
-    this.add.image(300, 200, "serio");
+    this.add.image(500, 350, "baiacu").setScale(0.8);
+    this.add.image(350, 200, "serio").setScale(0.7);
+    this.add.image(150, 170, "ariel").setScale(0.15);
     this.add.image(450, 210, "areia").setScale(0.5);
     peixinho = this.add.image(400, 300, "peixe"); // guardar o peixe em uma variavel
     peixinho.setFlip(true, false); // transformando a variavel
-    this.add.image(150, 300, "turquesa");
-    this.add.image(650, 200, "tubarao");
+    this.add.image(180, 350, "turquesa").setScale(0.8);
+    this.add.image(650, 200, "tubarao").setScale(1.5);
     this.add.image(400, 550, "logo").setScale(0.5);
 }
 
